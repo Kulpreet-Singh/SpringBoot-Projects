@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.concurrent.TimeUnit;
 
 @Service
+@Primary
 public class RedisSeatLockStrategy implements SeatLockStrategy {
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;

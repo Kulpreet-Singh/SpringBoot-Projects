@@ -27,11 +27,11 @@ class ShowControllerTest {
 
     @Test
     public void testConcurrentBooking() throws ExecutionException, InterruptedException {
-        Long showId = 14L;
-        List<Long> seatIds1 = Arrays.asList(1L, 3L);
-        List<Long> seatIds2 = Arrays.asList(2L, 3L);
-        Long userId1 = 1L;
-        Long userId2 = 4L;
+        Long showId = 15L;
+        List<Long> seatIds1 = Arrays.asList(1603L, 1604L);
+        List<Long> seatIds2 = Arrays.asList(1605L, 1604L);
+        Long userId1 = 11L;
+        Long userId2 = 12L;
 
         CompletableFuture<MvcResult> booking1 = CompletableFuture.supplyAsync(() -> {
             try {
